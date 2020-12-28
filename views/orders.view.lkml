@@ -236,6 +236,8 @@ dimension: days_since_purchase_tier {
     sql: ${count_order}+${sales_new_measure} ;;
   }
 
+  dimension: test {}
+
   set: new_set {
     fields: [order_id, product_name, customer_name, returns.count]
   }
